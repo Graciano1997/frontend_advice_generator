@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
-body{
+body {
     background-color: hsl(218, 23%, 16%);
     display: flex;
     flex-direction: column;
@@ -16,7 +16,8 @@ body{
     font-style: normal;
     height: 100vh;
 }
-main{
+
+main {
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -24,16 +25,18 @@ main{
     justify-content: center;
     padding: 5rem;
 }
-#adviceId{
-    /* margin-top: -2rem; */
+
+#adviceId {
+    margin-top: -2rem;
     color: hsl(150, 100%, 66%);
 }
-#advice{
-    color:hsl(193, 38%, 86%);
+
+#advice {
+    color: hsl(193, 38%, 86%);
     font-size: 20px;
 }
-.adviceContainer{
-    /* margin-top: 40px; */
+
+.adviceContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,33 +48,113 @@ main{
     background-color: hsl(217, 19%, 24%);
     text-align: center;
     padding: 28px 30px 20px 30px;
+    transition: all 1s ease-in-out;
 }
-.divisor{
+
+.divisor {
     width: 100%;
     margin: 8px 0 15px 0;
 }
 
-.diceContainer{
+.diceContainer {
     margin-top: -27px;
     background-color: hsl(150, 100%, 66%);
     height: 53px;
     width: 53px;
     border-radius: 50%;
     display: flex;
-    justify-content:center ;
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: all 1s ease-in-out;
 }
 
-.diceContainer:hover{
-    box-shadow: 0 0 35px 3px hsl(150, 100%, 66%);
+.diceContainer:hover {
+    box-shadow: 0 0 40px 3px hsl(150, 100%, 66%);
 }
 
-.diceContainer img{
+.diceContainer img {
     width: 40%;
     height: 40%;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    color: hsl(150, 100%, 66%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 10px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(193, 38%, 86%);
+}
+
+@media screen and (max-width:375px) {
+    .adviceContainer {
+        gap: 18px;
+        align-items: center;
+        height: 220px;
+        width: 80%;
+        border-radius: 12px;
+        text-align: center;
+        padding: 24px 28px 18px 28px;
+    }
+
+    #advice {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:459px) {
+    .adviceContainer {
+        height: 220px;
+        width: 100%;
+        padding: 24px 28px 18px 28px;
+    }
+
+    #advice {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .adviceContainer {
+        height: 230px;
+        width: 395px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    main {
+        margin-top: 4rem;
+        justify-content: flex-start;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
