@@ -63,6 +63,20 @@ I am sharping my FrontEnd Skills and improve project to project.
     box-shadow: 0 0 40px 3px hsl(150, 100%, 66%);
 }
 ```
+```js
+
+const quoteGenerator = async () => {
+    const response = await fetch('https://api.adviceslip.com/advice');
+    const responseObject = await response.json();
+
+    document.querySelector('#quote').textContent = responseObject.slip.advice;
+    document.querySelector('#quoteNumber').textContent = responseObject.slip.id;
+  }
+
+  const diceButton = document.querySelector('.diceContainer').addEventListener("click", () => {
+    quoteGenerator();
+});
+```
 
 ### Continued development
 
