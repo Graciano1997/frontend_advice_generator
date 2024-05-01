@@ -27,11 +27,12 @@ main {
 }
 
 #adviceId {
-    margin-top: -2rem;
+    margin-top: -25px;
     color: hsl(150, 100%, 66%);
 }
 
 #advice {
+    margin-top: 12px;
     color: hsl(193, 38%, 86%);
     font-size: 20px;
 }

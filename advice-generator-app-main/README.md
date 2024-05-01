@@ -56,7 +56,7 @@ Users should be able to:
 
 ### What I learned
 
-I am sharping my FrontEnd Skill and improve project to project.
+I am sharping my FrontEnd Skills and improve project to project.
 
 ```css
 .diceContainer:hover {
